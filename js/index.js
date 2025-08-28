@@ -19,3 +19,66 @@ for (const everyLoveBtn of loveBtns) {
         }
     });
 }
+
+//  Calling Button JS event Handler.
+const totalCoin = getElement('total-coin');
+const coinPerCall = 20;
+const callBtns = document.getElementsByClassName('call-btn');
+for (const everyBtn of callBtns) {
+    everyBtn.addEventListener('click', function () {
+        if (everyBtn) {
+            const TotalCoinNumber = Number(totalCoin.innerText);
+
+            if (TotalCoinNumber >= coinPerCall) {
+                let currentTotalCoin = TotalCoinNumber - coinPerCall;
+                totalCoin.innerText = currentTotalCoin;
+
+                const title =
+                    everyBtn.parentNode.parentNode.children[1].children[0]
+                        .innerText;
+                const dialNumber =
+                    everyBtn.parentNode.parentNode.children[1].children[2]
+                        .innerText;
+
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('en-US', {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                });
+
+                alert('📞 কলিং ' + title + ' ' + dialNumber + '. . . .');
+
+                const cartContainer = getElement('call-container');
+                const newCart = document.createElement('div');
+                newCart.innerHTML = `
+                <div
+                    class="flex justify-between items-center bg-[#fafafa] py-4 px-2 rounded-[8px] mt-4 mb-2">
+                    <div>
+                        <h1
+                            class="text-[18px] text-[#111111] font-semibold mb-[2px]">
+                            ${title}
+                        </h1>
+                        <h2
+                            class="ext-[18px] text-[#5c5c5c] font-normal">
+                            ${dialNumber}
+                        </h2>
+                    </div>
+                    <div class="clock">${timeString}</div>
+                </div>
+                    `;
+                cartContainer.append(newCart);
+            } else {
+                alert(
+                    '❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।'
+                );
+            }
+        }
+    });
+}
+
+// // For Clear the notifications
+document.getElementById('btn-clear').addEventListener('click', function () {
+    const callContainer = getElement('call-container');
+    callContainer.innerHTML = '';
+});

@@ -71,7 +71,7 @@
                             class="coin flex justify-center items-center gap-[10px] bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px]">
                             <p
                                 id="total-coin"
-                                class="text-[16px] text-[#000000] font-[900]">
+                                class="w-5 text-[16px] text-[#000000] font-[900]">
                                 100
                             </p>
                             <img
@@ -82,7 +82,8 @@
                         <div
                             class="copy flex justify-center items-center bg-[#00a63e] w-[123px] h-[52px] rounded-[50px]">
                             <p class="text-[16px] text-[#ffffff] font-[600]">
-                                <span class="mr-[10px]">0</span>Copy
+                                <span id="copy-count" class="mr-[10px]">0</span
+                                >Copy
                             </p>
                         </div>
                     </div>
@@ -125,20 +126,22 @@
                                     <i class="fa-regular fa-heart text-2xl"></i>
                                 </button>
                             </div>
-                            <h1
-                                id="main-title"
-                                class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <h3
-                                class="text-[18px] text-[#5c5c5c] font-normal mb-6">
-                                National Emergency Service
-                            </h3>
-                            <h2
-                                id="dial-number"
-                                class="text-3xl text-[#111111] font-bold">
-                                71717
-                            </h2>
+                            <div>
+                                <h1
+                                    id="main-title"
+                                    class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
+                                    জাতীয় জরুরি সেবা
+                                </h1>
+                                <h3
+                                    class="text-[18px] text-[#5c5c5c] font-normal mb-6">
+                                    National Emergency Service
+                                </h3>
+                                <h2
+                                    id="dial-number"
+                                    class="text-3xl text-[#111111] font-bold">
+                                    999
+                                </h2>
+                            </div>
                             <div
                                 class="flex flex-col justify-center items-center bg-[#f2f2f2] h-[37px] rounded-[50px] px-5 w-fit mb-6 mt-1">
                                 <h3
@@ -148,15 +151,12 @@
                             </div>
                             <div class="flex gap-2">
                                 <button
-                                    class="w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="copy-bt w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-regular fa-copy mr-1"></i> Copy
                                 </button>
                                 <button
-                                    id="call-btn"
-                                    class="bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
-                                    <i
-                                        id="call"
-                                        class="fa-solid fa-phone mr-1"></i>
+                                    class="call-btn bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                                    <i class="fa-solid fa-phone mr-1"></i>
                                     Call
                                 </button>
                             </div>
@@ -176,17 +176,22 @@
                                     <i class="fa-regular fa-heart text-2xl"></i>
                                 </button>
                             </div>
-                            <h1
-                                class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
-                                পুলিশ
-                            </h1>
-                            <h3
-                                class="text-[18px] text-[#5c5c5c] font-normal mb-6">
-                                Police
-                            </h3>
-                            <h2 class="text-3xl text-[#111111] font-bold">
-                                81818
-                            </h2>
+                            <div>
+                                <h1
+                                    id="main-title"
+                                    class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
+                                    পুলিশ
+                                </h1>
+                                <h3
+                                    class="text-[18px] text-[#5c5c5c] font-normal mb-6">
+                                    Police
+                                </h3>
+                                <h2
+                                    id="dial-number"
+                                    class="text-3xl text-[#111111] font-bold">
+                                    999
+                                </h2>
+                            </div>
                             <div
                                 class="flex flex-col justify-center items-center bg-[#f2f2f2] h-[37px] rounded-[50px] px-5 w-fit mb-6 mt-1">
                                 <h3
@@ -196,11 +201,11 @@
                             </div>
                             <div class="flex gap-2">
                                 <button
-                                    class="w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="copy-bt w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-regular fa-copy mr-1"></i> Copy
                                 </button>
                                 <button
-                                    class="bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="call-btn bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-solid fa-phone mr-1"></i> Call
                                 </button>
                             </div>
@@ -220,17 +225,22 @@
                                     <i class="fa-regular fa-heart text-2xl"></i>
                                 </button>
                             </div>
-                            <h1
-                                class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
-                                ফায়ার সার্ভিস
-                            </h1>
-                            <h3
-                                class="text-[18px] text-[#5c5c5c] font-normal mb-6">
-                                Fire Service
-                            </h3>
-                            <h2 class="text-3xl text-[#111111] font-bold">
-                                999
-                            </h2>
+                            <div>
+                                <h1
+                                    id="main-title"
+                                    class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
+                                    ফায়ার সার্ভিস
+                                </h1>
+                                <h3
+                                    class="text-[18px] text-[#5c5c5c] font-normal mb-6">
+                                    Fire Service
+                                </h3>
+                                <h2
+                                    id="dial-number"
+                                    class="text-3xl text-[#111111] font-bold">
+                                    999
+                                </h2>
+                            </div>
                             <div
                                 class="flex flex-col justify-center items-center bg-[#f2f2f2] h-[37px] rounded-[50px] px-5 w-fit mb-6 mt-1">
                                 <h3
@@ -240,11 +250,11 @@
                             </div>
                             <div class="flex gap-2">
                                 <button
-                                    class="w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="copy-bt w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-regular fa-copy mr-1"></i> Copy
                                 </button>
                                 <button
-                                    class="bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="call-btn bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-solid fa-phone mr-1"></i> Call
                                 </button>
                             </div>
@@ -264,17 +274,22 @@
                                     <i class="fa-regular fa-heart text-2xl"></i>
                                 </button>
                             </div>
-                            <h1
-                                class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
-                                অ্যাম্বুলেন্স
-                            </h1>
-                            <h3
-                                class="text-[18px] text-[#5c5c5c] font-normal mb-6">
-                                Ambulance
-                            </h3>
-                            <h2 class="text-3xl text-[#111111] font-bold">
-                                61616
-                            </h2>
+                            <div>
+                                <h1
+                                    id="main-title"
+                                    class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
+                                    অ্যাম্বুলেন্স
+                                </h1>
+                                <h3
+                                    class="text-[18px] text-[#5c5c5c] font-normal mb-6">
+                                    Ambulance
+                                </h3>
+                                <h2
+                                    id="dial-number"
+                                    class="text-3xl text-[#111111] font-bold">
+                                    1994-999999
+                                </h2>
+                            </div>
                             <div
                                 class="flex flex-col justify-center items-center bg-[#f2f2f2] h-[37px] rounded-[50px] px-5 w-fit mb-6 mt-1">
                                 <h3
@@ -284,11 +299,11 @@
                             </div>
                             <div class="flex gap-2">
                                 <button
-                                    class="w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="copy-bt w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-regular fa-copy mr-1"></i> Copy
                                 </button>
                                 <button
-                                    class="bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="call-btn bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-solid fa-phone mr-1"></i> Call
                                 </button>
                             </div>
@@ -308,17 +323,22 @@
                                     <i class="fa-regular fa-heart text-2xl"></i>
                                 </button>
                             </div>
-                            <h1
-                                class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
-                                নারী ও শিশু সহায়তা
-                            </h1>
-                            <h3
-                                class="text-[18px] text-[#5c5c5c] font-normal mb-6">
-                                Women and Child Support
-                            </h3>
-                            <h2 class="text-3xl text-[#111111] font-bold">
-                                51515
-                            </h2>
+                            <div>
+                                <h1
+                                    id="main-title"
+                                    class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
+                                    নারী ও শিশু সহায়তা
+                                </h1>
+                                <h3
+                                    class="text-[18px] text-[#5c5c5c] font-normal mb-6">
+                                    Women and Child Support
+                                </h3>
+                                <h2
+                                    id="dial-number"
+                                    class="text-3xl text-[#111111] font-bold">
+                                    109
+                                </h2>
+                            </div>
                             <div
                                 class="flex flex-col justify-center items-center bg-[#f2f2f2] h-[37px] rounded-[50px] px-5 w-fit mb-6 mt-1">
                                 <h3
@@ -328,11 +348,11 @@
                             </div>
                             <div class="flex gap-2">
                                 <button
-                                    class="w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="copy-bt w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-regular fa-copy mr-1"></i> Copy
                                 </button>
                                 <button
-                                    class="bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="call-btn bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-solid fa-phone mr-1"></i> Call
                                 </button>
                             </div>
@@ -352,17 +372,22 @@
                                     <i class="fa-regular fa-heart text-2xl"></i>
                                 </button>
                             </div>
-                            <h1
-                                class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
-                                দুদক
-                            </h1>
-                            <h3
-                                class="text-[18px] text-[#5c5c5c] font-normal mb-6">
-                                Anti Corruption Commission
-                            </h3>
-                            <h2 class="text-3xl text-[#111111] font-bold">
-                                41414
-                            </h2>
+                            <div>
+                                <h1
+                                    id="main-title"
+                                    class="text-2xl text-[#111111] font-bold mt-4 mb-[2px]">
+                                    দুদক
+                                </h1>
+                                <h3
+                                    class="text-[18px] text-[#5c5c5c] font-normal mb-6">
+                                    Anti Corruption Commission
+                                </h3>
+                                <h2
+                                    id="dial-number"
+                                    class="text-3xl text-[#111111] font-bold">
+                                    106
+                                </h2>
+                            </div>
                             <div
                                 class="flex flex-col justify-center items-center bg-[#f2f2f2] h-[37px] rounded-[50px] px-5 w-fit mb-6 mt-1">
                                 <h3
@@ -372,11 +397,11 @@
                             </div>
                             <div class="flex gap-2">
                                 <button
-                                    class="w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="copy-bt w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#5c5c5c] border-1 border-[#d4d6d5] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-regular fa-copy mr-1"></i> Copy
                                 </button>
                                 <button
-                                    class="bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                                    class="call-btn bg-[#00a63e] w-full h-[40px] rounded-[8px] text-[16px] font-normal text-[#ffffff] hover:bg-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                                     <i class="fa-solid fa-phone mr-1"></i> Call
                                 </button>
                             </div>
