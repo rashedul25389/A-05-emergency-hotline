@@ -36,6 +36,9 @@ for (const everyBtn of callBtns) {
                 const title =
                     everyBtn.parentNode.parentNode.children[1].children[0]
                         .innerText;
+                const subTitle =
+                    everyBtn.parentNode.parentNode.children[1].children[1]
+                        .innerText;
                 const dialNumber =
                     everyBtn.parentNode.parentNode.children[1].children[2]
                         .innerText;
@@ -47,7 +50,7 @@ for (const everyBtn of callBtns) {
                     second: '2-digit',
                 });
 
-                alert('📞 কলিং ' + title + ' ' + dialNumber + '. . . .');
+                alert('📞 Calling ' + subTitle + ' ' + dialNumber + ' . . . .');
 
                 const cartContainer = getElement('call-container');
                 const newCart = document.createElement('div');
@@ -82,3 +85,25 @@ document.getElementById('btn-clear').addEventListener('click', function () {
     const callContainer = getElement('call-container');
     callContainer.innerHTML = '';
 });
+
+// //  Copy Button JS event Handler.
+const copyBtns = document.getElementsByClassName('copy-bt');
+for (const everyBtn of copyBtns) {
+    everyBtn.addEventListener('click', async function () {
+        if (everyBtn) {
+            const dialNumber =
+                everyBtn.parentNode.parentNode.children[1].children[2]
+                    .innerText;
+
+            try {
+                await navigator.clipboard.writeText(dialNumber);
+            } catch (err) {}
+
+            alert('নম্বর কপি হয়েছে : ' + dialNumber);
+
+            const totalCopyNumber = getElement('copy-count').innerText;
+            const currentCopyNumber = Number(totalCopyNumber) + 1;
+            getElement('copy-count').innerText = currentCopyNumber;
+        }
+    });
+}
