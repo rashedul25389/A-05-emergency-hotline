@@ -56,14 +56,14 @@ for (const everyBtn of callBtns) {
                 const newCart = document.createElement('div');
                 newCart.innerHTML = `
                 <div
-                    class="flex justify-between items-center bg-[#fafafa] py-4 px-2 rounded-[8px] mt-4 mb-2">
+                    class="flex justify-between items-center bg-[#fafafa] py-4 px-2 rounded-[8px] mb-2">
                     <div>
                         <h1
                             class="text-[18px] text-[#111111] font-semibold mb-[2px]">
                             ${title}
                         </h1>
                         <h2
-                            class="ext-[18px] text-[#5c5c5c] font-normal">
+                            class="text-[18px] text-[#5c5c5c] font-normal">
                             ${dialNumber}
                         </h2>
                     </div>
