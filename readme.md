@@ -3,7 +3,6 @@
 <p align="center">
   <img src="https://i.ibb.co.com/8LMFQb9k/Screenshot-2025-11-19-015442.png" alt="Emergency Service Screenshot" width="100%" />
 </p>
-
 ---
 
 ## 🔗 Live Site
