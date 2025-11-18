@@ -1,12 +1,12 @@
 # JavaScript DOM & Events Practice Project 🖥️
 
 <p align="center">
-  <img src="https://i.ibb.co.com/8LMFQb9k/Screenshot-2025-11-19-015442.png" alt="Emergency Service Screenshot" width="100%" />
+  <img src="https://i.ibb.co.com/cSfgbtfm/Screenshot-2025-11-19-015442.png" alt="Emergency Service Screenshot" width="100%" />
 </p>
 ---
 
 ## 🔗 Live Site
-Check out the live demo: [JavaScript DOM Practice](https://rashedul25389.github.io/A-05-emergency-hotline/)
+Check out the live demo: [Emergency Service](https://rashedul25389.github.io/A-05-emergency-hotline/)
 
 ---
 
