@@ -1,4 +1,4 @@
-# JEmergency Service 🖥️
+# Emergency Service 🖥️
 
 <p align="center">
   <img src="https://i.ibb.co.com/cSfgbtfm/Screenshot-2025-11-19-015442.png" alt="Emergency Service Screenshot" width="100%" />
