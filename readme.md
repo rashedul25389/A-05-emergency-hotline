@@ -1,43 +1,49 @@
-### 6. Answer the following questions clearly:
+# JavaScript DOM & Events Practice Project 🖥️
 
-1.  What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-    Answer:
-    Those are all used to select HTML elements from the DOM. Among them, getElementById's purpose is to choose a single element by its ID attribute. It returns a single-element object. Its performance is fast.
+<p align="center">
+  <img src="https://i.ibb.co.com/8LMFQb9k/Screenshot-2025-11-19-015442.png" alt="Emergency Service Screenshot" width="100%" />
+</p>
 
-    getElementsByClassName's purpose is to select elements by class attribute. It returns HTML collections. Its performance is slower than getElementById.
+---
 
-    querySelector and querySelectorAll's purpose is to select elements by using CSS selectors. It returns the first matching Element object, NodeList, which is a static, array-like object. Its performance is slow.
+## 🔗 Live Site
+Check out the live demo: [JavaScript DOM Practice](https://rashedul25389.github.io/A-05-emergency-hotline/)
 
-2.  How do you **create and insert a new element into the DOM**?
-    Answer:
-    const newElement = document.createElement('div');
-    newElement.innerText = 'This is new element';
-    newElement.classList.add('new-class');
-    const mainElement = document.getElementById('container');
-    mainElement.appendChild(newElement);
+---
 
-3.  What is **Event Bubbling** and how does it work?
-    Answer:
-    Event bubbling is a mechanism where an event, such as a click or keypress, travels upward from the innermost element where it was triggered to its outer parent elements in the DOM hierarchy.
-    it's work like DOM tree from up to root. for example:
-    <html>
-        <head>
-            <title>Event Bubbling Example</title>
-        </head>
-        <body>
-            <div id="grandparent">
-                <div id="parent">
-                    <button id="child">Click Me</button>
-                </div>
-            </div>
-        </body>
-    </html>
-    When the <button id="child"> is clicked, the click event propagates in this sequence: #child, #parent, #grandparent, <body>, and <html>.
+## 📝 Project Overview
+This project is a **JavaScript DOM manipulation and event handling practice application**. It demonstrates how to select elements, create and insert new elements, and handle user interactions using **Event Bubbling** and **Event Delegation**.  
 
-4.  What is **Event Delegation** in JavaScript? Why is it useful?
-    Answer:
-    Event delegation in JavaScript involves attaching a single event listener to a parent element, leveraging event bubbling to detect and handle events from specific child elements.
-    When you adding click listeners to each of 100 list items, you place one listener on the parent <ul> to manage events for all items.
+It’s perfect for learning and understanding the core concepts of the DOM, event propagation, and dynamic UI updates in a browser.
 
-5.  What is the difference between **preventDefault() and stopPropagation()** methods?
-    Answer: The methods preventDefault() and stopPropagation() are used to manage event behavior in a browser. preventDefault() stops the action, while stopPropagation() stops the flow.
+---
+
+## 🚀 Features
+- **Element Selection:** Using `getElementById`, `getElementsByClassName`, `querySelector`, and `querySelectorAll`  
+- **Dynamic Elements:** Create, customize, and insert new HTML elements into the DOM  
+- **Event Bubbling:** Demonstrates how events propagate from child elements to parent elements  
+- **Event Delegation:** Efficiently handles events on multiple child elements with a single parent listener  
+
+---
+
+## 🛠 Technologies Used
+- **JavaScript** – Core logic and DOM manipulation  
+- **HTML5** – Structure of the application  
+- **CSS3** – Styling and layout  
+
+---
+
+## 📦 Dependencies
+This is a **vanilla JavaScript project**, so it **does not use external dependencies**.  
+
+Optional tools for development:  
+- **VS Code** – Editor  
+- **Live Server** – To serve HTML pages locally  
+
+---
+
+## 💻 Installation & Setup (Local)
+1. Clone the repository:  
+```bash
+git clone https://github.com/your-username/js-dom-events.git
+Right-click on index.html -> Open with Live Server
